@@ -1,0 +1,17 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.completion.importOrder": ["java", "javax"],
+    "java.saveActions.organizeImports": true,
+    "java.cleanup.actionsOnSave": ["qualifyMembers"],
+    "editor.codeActionsOnSave": {"source.organizeImports": true},
+    "editor.inlayHints.enabled": "off",
+    "workbench.editorAssociations": {
+       "*.md": "vscode.markdown.preview.editor"
+    },
+    "maven.view": "flat",
+    "simpleBrowser.focusLockIndicator.enabled": false,
+    "files.exclude": {
+    }
+
+}
