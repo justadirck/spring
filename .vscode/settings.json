@@ -1,17 +1,23 @@
 {
+    "editor.codeActionsOnSave": {"source.organizeImports": true},
+    "editor.inlayHints.enabled": "off",
+
+    "files.exclude": { },
+
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.compile.nullAnalysis.mode": "automatic",
     "java.completion.importOrder": ["java", "javax"],
     "java.saveActions.organizeImports": true,
-    "java.cleanup.actionsOnSave": ["qualifyMembers"],
-    "editor.codeActionsOnSave": {"source.organizeImports": true},
-    "editor.inlayHints.enabled": "off",
+    "java.cleanup.actionsOnSave": ["qualifyMembers"],   
+
+    "maven.view": "flat",
+
+    "rest-client.enableTelemetry": false,
+    "rest-client.previewOption": "exchange",
+    "rest-client.previewResponsePanelTakeFocus": false,
+
     "workbench.editorAssociations": {
        "*.md": "vscode.markdown.preview.editor"
     },
-    "maven.view": "flat",
-    "simpleBrowser.focusLockIndicator.enabled": false,
-    "files.exclude": {
-    }
 
 }
