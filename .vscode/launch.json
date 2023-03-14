@@ -6,6 +6,26 @@
             "request": "launch",
             "mainClass": "boot.Application",
             "projectName": "data-jpa"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-GemfireApplication<data-gemfire>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "boot.GemfireApplication",
+            "projectName": "data-gemfire",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<data-gemfire>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "boot.Application",
+            "projectName": "data-gemfire",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

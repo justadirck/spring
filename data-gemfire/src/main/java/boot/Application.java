@@ -15,10 +15,10 @@ import org.springframework.data.gemfire.repository.config.EnableGemfireRepositor
   clientRegionShortcut = ClientRegionShortcut.LOCAL
 )
 @EnableGemfireRepositories
-public class GemfireApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GemfireApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }

@@ -15,7 +15,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<start-class>boot.GemfireApplication</start-class>
+		<start-class>boot.Application</start-class>
   	</properties>
 
 	<dependencies>
