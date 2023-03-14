@@ -19,5 +19,11 @@
     "workbench.editorAssociations": {
        "*.md": "vscode.markdown.preview.editor"
     },
+    "maven.terminal.favorites": [
+        {
+            "command": "spring-boot:run",
+            "debug": false
+        }
+    ],
 
 }
