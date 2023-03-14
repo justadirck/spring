@@ -14,6 +14,10 @@
 	<artifactId>rest-hateoas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<properties>
+		<start-class>boot.Application</start-class>
+  	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
