@@ -4,6 +4,12 @@
             "type": "java",
             "name": "WebApplication",
             "request": "launch",
+            "mainClass": "io.spring.web.WebApplication"
+        },
+        {
+            "type": "java",
+            "name": "WebApplication",
+            "request": "launch",
             "mainClass": "io.spring.web.WebApplication",
             "projectName": "web"
         }
