@@ -1,17 +1,17 @@
-package io.spring.web;
+package boot.model;
 
 import java.util.concurrent.atomic.AtomicLong;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.PersistenceConstructor;
+import org.springframework.data.annotation.PersistenceCreator;
 import org.springframework.data.gemfire.mapping.annotation.Region;
 
 @Data
 @Region("People")
 public class Person {
 
-  private static AtomicLong COUNTER = new AtomicLong(0L);
+  private static AtomicLong counter = new AtomicLong(0L);
 
   @Id
   private Long id;
@@ -19,8 +19,9 @@ public class Person {
   private String firstName;
   private String lastName;
 
-  @PersistenceConstructor
+  @PersistenceCreator
   public Person() {
-    this.id = COUNTER.incrementAndGet();
+    this.id = counter.incrementAndGet();
   }
+  
 }

@@ -1,3 +1,3 @@
-package io.spring.web;
+package boot.model;
 
 public record Greeting(long id, String content) { }
