@@ -16,6 +16,7 @@
         <module>data-neo4j</module>
         <module>rest-hateoas</module>
         <module>rest-simple</module>
+        <module>scheduler</module>
     </modules>
 
     <dependencyManagement>
