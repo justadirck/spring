@@ -9,20 +9,24 @@
 		<version>0.0.1-SNAPSHOT</version>	
 	</parent>
 
-	<name>rest-simple</name>
+	<name>data-mongo</name>
 	<groupId>io.spring</groupId>
-	<artifactId>rest-simple</artifactId>
+	<artifactId>data-mongo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>		
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
