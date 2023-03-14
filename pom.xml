@@ -12,6 +12,7 @@
         <module>data-gemfire</module>
         <module>data-jpa</module>
         <module>data-mongo</module>
+        <module>data-mysql</module>
         <module>rest-hateoas</module>
         <module>rest-simple</module>
     </modules>
