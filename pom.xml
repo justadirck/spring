@@ -8,7 +8,7 @@
     <modules>
         <module>data-gemfire</module>
         <module>data-jpa</module>
-        <module>service-rest</module>
-        <module>template</module>
+        <module>rest-hateoas</module>
+        <module>rest-simple</module>
     </modules>
 </project>

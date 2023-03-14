@@ -8,10 +8,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<name>service-rest</name>
-	<description>service-rest</description>	
+	<name>rest-simple</name>
+	<description>rest-simple</description>	
 	<groupId>io.spring</groupId>
-	<artifactId>service-rest</artifactId>
+	<artifactId>rest-simple</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
