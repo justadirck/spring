@@ -11,6 +11,7 @@
     "java.cleanup.actionsOnSave": ["qualifyMembers"],   
 
     "maven.view": "flat",
+    "prettier.tabWidth": 4,
 
     "rest-client.enableTelemetry": false,
     "rest-client.previewOption": "exchange",

@@ -1,0 +1,45 @@
+@host = http://localhost:8080
+
+###
+GET {{host}} HTTP/1.1
+
+###
+GET {{host}}/people HTTP/1.1
+
+###
+GET {{host}}/people/search HTTP/1.1
+
+###
+GET {{host}}/people/search/findByLastName?name=Hecking HTTP/1.1
+
+###
+GET {{host}}/people/7 HTTP/1.1
+
+###
+POST {{host}}/people HTTP/1.1
+content-type: application/json
+
+{
+    "firstName" : "Dirck",  
+    "lastName" : "Hecking" 
+}
+
+###
+PUT {{host}}/people/7 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName" : "Dircko",  
+    "lastName" : "Hecking" 
+}
+
+###
+PATCH {{host}}/people/7 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName" : "Dirck"
+}
+
+###
+DELETE {{host}}/people/1 HTTP/1.1
