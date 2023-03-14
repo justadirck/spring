@@ -6,8 +6,9 @@
     <version>0.1.0</version>
     <packaging>pom</packaging>
     <modules>
-        <module>gemfire</module>
-        <module>rest</module>
+        <module>data-gemfire</module>
+        <module>data-jpa</module>
+        <module>service-rest</module>
         <module>template</module>
     </modules>
 </project>
