@@ -10,11 +10,13 @@
     "java.saveActions.organizeImports": true,
     "java.cleanup.actionsOnSave": ["qualifyMembers"],   
 
-    "maven.view": "hierarchical",
+    "maven.view": "flat",
 
     "rest-client.enableTelemetry": false,
     "rest-client.previewOption": "exchange",
     "rest-client.previewResponsePanelTakeFocus": false,
+
+    "spring-boot.ls.java.home":"C:/Program Files/BellSoft/LibericaJDK-17/bin",
 
     "workbench.editorAssociations": {
        "*.md": "vscode.markdown.preview.editor"
