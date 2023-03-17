@@ -9,9 +9,9 @@
 		<version>0.0.1-SNAPSHOT</version>	
 	</parent>
 
-	<name>data-mysql</name>
+	<name>mysql</name>
 	<groupId>io.spring</groupId>
-	<artifactId>data-mysql</artifactId>
+	<artifactId>mysql</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
     <properties>
