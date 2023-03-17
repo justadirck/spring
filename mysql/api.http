@@ -2,10 +2,40 @@
 
 @gcp = https://mysql-dot-justadirck.uc.r.appspot.com
 
-@host = {{gcp}}
+@host = {{lcl}}
 
 ###
-GET {{host}}/demo/all HTTP/1.1
+GET {{host}} HTTP/1.1
 
 ###
-POST {{host}}/demo/add?name=mysql&email=mysql@gmail.com HTTP/1.1
+GET {{host}}/people HTTP/1.1
+
+###
+POST {{host}}/people HTTP/1.1
+content-type: application/json
+
+{
+    "name" : "dirck",  
+    "email" : "dirck@gmail.com" 
+}
+
+###
+PATCH {{host}}/people/1 HTTP/1.1
+content-type: application/json
+
+{ 
+    "email" : "carly@sankaku.com" 
+}
+
+###
+PUT {{host}}/people/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name" : "carly",  
+    "email" : "carly@gmail.com" 
+}
+
+
+###
+DELETE {{host}}/people/102 HTTP/1.1
