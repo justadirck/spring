@@ -9,7 +9,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>jpa</module>        
         <module>mongo</module>
         <module>mysql</module>
         <module>postgres</module>
