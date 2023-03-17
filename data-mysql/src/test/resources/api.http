@@ -1,6 +1,6 @@
 @lcl = http://localhost:8080
 
-@gcp = https://spring-380702.uk.r.appspot.com
+@gcp = https://mysql-dot-spring-380702.uk.r.appspot.com
 
 @host = {{gcp}}
 
@@ -8,4 +8,4 @@
 GET {{host}}/demo/all HTTP/1.1
 
 ###
-POST {{host}}/demo/add?name=jewls&email=jewls@gmail.com HTTP/1.1
+POST {{host}}/demo/add?name=candy&email=candy@gmail.com HTTP/1.1
