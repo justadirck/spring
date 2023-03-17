@@ -5,6 +5,13 @@
             "name": "Application",
             "request": "launch",
             "mainClass": "boot.Application",
+            "projectName": "web"
+        },
+        {
+            "type": "java",
+            "name": "Application",
+            "request": "launch",
+            "mainClass": "boot.Application",
             "projectName": "data-jpa"
         },
         {

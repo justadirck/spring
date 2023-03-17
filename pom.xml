@@ -17,7 +17,17 @@
         <module>rest-hateoas</module>
         <module>rest-simple</module>
         <module>scheduler</module>
+        <module>web</module>
+        <module>web-cities</module>
     </modules>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>        
+        <spring-boot.version>3.0.4</spring-boot.version>
+        <spring-cloud-gcp.version>1.2.8.RELEASE</spring-cloud-gcp.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -25,6 +35,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-gcp-dependencies</artifactId>
+                <version>${spring-cloud-gcp.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -39,6 +56,12 @@
     </dependencyManagement>
     
     <build>
+        <finalName>${project.name}</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>              
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -47,7 +70,6 @@
                     <version>${spring-boot.version}</version>
                     <configuration>
                         <mainClass>${start-class}</mainClass>
-                        <layout>JAR</layout>
                     </configuration>
                     <executions>
                         <execution>
@@ -57,70 +79,17 @@
                         </execution>
                     </executions>               
                 </plugin>
+                <plugin>
+                    <groupId>com.google.cloud.tools</groupId>
+                    <artifactId>appengine-maven-plugin</artifactId>
+                    <version>2.4.4</version>
+                    <configuration>
+                        <version>GCLOUD_CONFIG</version>
+                        <projectId>GCLOUD_CONFIG</projectId>
+                    </configuration>
+                </plugin>              
             </plugins>
         </pluginManagement>
     </build>
-
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>        
-        <spring-boot.version>3.0.4</spring-boot.version>
-        <spring-cloud-gcp.version>1.2.8.RELEASE</spring-cloud-gcp.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
-    <profiles>
-        <profile>
-            <id>cloud-gcp</id>
-            <dependencies>
-                <dependency>
-                    <groupId>org.springframework.cloud</groupId>
-                    <artifactId>spring-cloud-gcp-starter</artifactId>
-                    <version>${spring-cloud-gcp.version}</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.springframework.cloud</groupId>
-                    <artifactId>spring-cloud-gcp-starter-sql-mysql</artifactId>
-                    <version>${spring-cloud-gcp.version}</version>
-                </dependency>
-            </dependencies>
-            <build>
-                <finalName>${project.name}-gcp</finalName>
-                <resources>
-                    <resource>
-                        <directory>src/main/resources</directory>
-                    </resource>
-                </resources>              
-                <plugins>   
-                    <plugin>
-                        <groupId>org.springframework.boot</groupId>
-                        <artifactId>spring-boot-maven-plugin</artifactId>
-                        <version>${spring-boot.version}</version>
-                        <configuration>
-                            <mainClass>${start-class}</mainClass>
-                            <layout>JAR</layout>
-                        </configuration>
-                        <executions>
-                            <execution>
-                                <goals>
-                                    <goal>repackage</goal>
-                                </goals>
-                            </execution>
-                        </executions>               
-                    </plugin>                                       
-                    <plugin>
-                        <groupId>com.google.cloud.tools</groupId>
-                        <artifactId>appengine-maven-plugin</artifactId>
-                        <version>2.4.4</version>
-                        <configuration>
-                            <version>GCLOUD_CONFIG</version>
-                            <projectId>GCLOUD_CONFIG</projectId>
-                        </configuration>
-                    </plugin>              
-                </plugins>
-            </build>
-	    </profile>
-    </profiles>
-
 
 </project>
