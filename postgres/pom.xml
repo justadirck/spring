@@ -9,9 +9,9 @@
 		<version>0.0.1-SNAPSHOT</version>	
 	</parent>
 
-	<name>mysql</name>
+	<name>postgres</name>
 	<groupId>io.spring</groupId>
-	<artifactId>mysql</artifactId>
+	<artifactId>postgres</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
     <properties>
@@ -29,14 +29,14 @@
 		</dependency>
 		<dependency>
 			<groupId>com.google.cloud</groupId>
-			<artifactId>spring-cloud-gcp-starter-sql-mysql</artifactId>
+			<artifactId>spring-cloud-gcp-starter-sql-postgresql</artifactId>
 		</dependency>
 		
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
- 
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

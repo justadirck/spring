@@ -8,4 +8,4 @@
 GET {{host}}/demo/all HTTP/1.1
 
 ###
-POST {{host}}/demo/add?name=yoshi&email=yoshi@gmail.com HTTP/1.1
+POST {{host}}/demo/add?name=dirck&email=dirck@gmail.com HTTP/1.1

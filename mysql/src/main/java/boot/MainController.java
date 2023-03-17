@@ -1,4 +1,4 @@
-package boot.controller;
+package boot;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -8,28 +8,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import boot.model.User;
-import boot.model.UserRepository;
-
 @Controller
 @RequestMapping(path="/demo")
 public class MainController {
   
   @Autowired 
-  private UserRepository userRepository;
+  private PersonRepository personRepository;
 
   @PostMapping(path="/add") 
   public @ResponseBody String addNewUser (@RequestParam String name, @RequestParam String email) {
-    User n = new User();
-    n.setName(name);
-    n.setEmail(email);
-    userRepository.save(n);
+    Person p = new Person();
+    p.setName(name);
+    p.setEmail(email);
+    this.personRepository.save(p);
     return "Saved";
   }
 
   @GetMapping(path="/all")
-  public @ResponseBody Iterable<User> getAllUsers() {
-    return userRepository.findAll();
+  public @ResponseBody Iterable<Person> getAllUsers() {
+    return this.personRepository.findAll();
   }
 
 }
