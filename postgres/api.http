@@ -1,11 +1,11 @@
 @lcl = http://localhost:8080
 
-@gcp = https://mysql-dot-justadirck.uc.r.appspot.com
+@gcp = https://postgres-dot-justadirck.uc.r.appspot.com
 
-@host = {{lcl}}
+@host = {{gcp}}
 
 ###
 GET {{host}}/demo/all HTTP/1.1
 
 ###
-POST {{host}}/demo/add?name=dirck&email=dirck@gmail.com HTTP/1.1
+POST {{host}}/demo/add?name=postgres&email=postgres@gmail.com HTTP/1.1

@@ -2,10 +2,10 @@
 
 @gcp = https://mysql-dot-justadirck.uc.r.appspot.com
 
-@host = {{lcl}}
+@host = {{gcp}}
 
 ###
 GET {{host}}/demo/all HTTP/1.1
 
 ###
-POST {{host}}/demo/add?name=yoshi&email=yoshi@gmail.com HTTP/1.1
+POST {{host}}/demo/add?name=mysql&email=mysql@gmail.com HTTP/1.1
