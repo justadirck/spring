@@ -9,14 +9,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>gemfire</module>
         <module>jpa</module>        
-        <module>data-mongo</module>
+        <module>mongo</module>
         <module>mysql</module>
-        <module>data-neo4j</module>
-        <module>rest-hateoas</module>
-        <module>rest-simple</module>
-        <module>scheduler</module>
         <module>web</module>
         <module>web-cities</module>
     </modules>

@@ -1,0 +1,57 @@
+@lcl = http://localhost:8080
+@gcp = https://mongo-dot-justadirck.uc.r.appspot.com
+
+@host = {{gcp}}
+
+###
+GET {{host}} HTTP/1.1
+
+###
+GET {{host}}/people HTTP/1.1
+
+###
+GET {{host}}/people/search HTTP/1.1
+
+###
+GET {{host}}/people/search/findByLastName?name=Hecking HTTP/1.1
+
+###
+POST {{host}}/people HTTP/1.1
+content-type: application/json
+
+{
+    "firstName" : "Dirck",  
+    "lastName" : "Hecking" 
+}
+
+###
+POST {{host}}/people HTTP/1.1
+content-type: application/json
+
+{
+    "firstName" : "Shar",  
+    "lastName" : "Kondzela" 
+}
+
+###
+GET {{host}}/people/641485210697e2405d2f6f86 HTTP/1.1
+
+###
+PUT {{host}}/people/641485210697e2405d2f6f86 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName" : "Dircko",  
+    "lastName" : "Hecking" 
+}
+
+###
+PATCH {{host}}/people/641485210697e2405d2f6f86 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName" : "Dirck"
+}
+
+###
+DELETE {{host}}/people/641485210697e2405d2f6f86 HTTP/1.1

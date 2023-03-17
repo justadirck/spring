@@ -1,8 +1,0 @@
-@host = http://localhost:8080
-
-###
-GET {{host}}/greeting HTTP/1.1
-
-###
-GET {{host}}/greeting?name=dirck HTTP/1.1
-
