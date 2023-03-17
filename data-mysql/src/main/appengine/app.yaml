@@ -1,0 +1,4 @@
+runtime: java17
+instance_class: F2
+service: default
+# entrypoint: java -Xmx64m -jar data-mysql-gcp.jar
