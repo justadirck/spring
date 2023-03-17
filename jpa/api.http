@@ -1,4 +1,8 @@
-@host = http://localhost:8080
+@lcl = http://localhost:8080
+
+@gcp = https://jpa-dot-justadirck.uc.r.appspot.com
+
+@host = {{gcp}}
 
 ###
 GET {{host}} HTTP/1.1

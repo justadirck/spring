@@ -1,4 +1,4 @@
-package boot.model;
+package boot;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package boot.model;
+package boot;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -1,4 +1,8 @@
-@host = http://localhost:8080
+@lcl = http://localhost:8080
+
+@gcp = https://gemfire-dot-justadirck.uc.r.appspot.com
+
+@host = {{gcp}}
 
 ###
 GET {{host}} HTTP/1.1
@@ -13,7 +17,7 @@ GET {{host}}/people/search HTTP/1.1
 GET {{host}}/people/search/findByLastName?name=Hecking HTTP/1.1
 
 ###
-GET {{host}}/people/7 HTTP/1.1
+GET {{host}}/people/1 HTTP/1.1
 
 ###
 POST {{host}}/people HTTP/1.1
@@ -25,7 +29,7 @@ content-type: application/json
 }
 
 ###
-PUT {{host}}/people/7 HTTP/1.1
+PUT {{host}}/people/1 HTTP/1.1
 content-type: application/json
 
 {
@@ -34,7 +38,7 @@ content-type: application/json
 }
 
 ###
-PATCH {{host}}/people/7 HTTP/1.1
+PATCH {{host}}/people/1 HTTP/1.1
 content-type: application/json
 
 {

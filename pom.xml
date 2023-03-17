@@ -9,8 +9,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>data-gemfire</module>
-        <module>data-jpa</module>        
+        <module>gemfire</module>
+        <module>jpa</module>        
         <module>data-mongo</module>
         <module>mysql</module>
         <module>data-neo4j</module>
