@@ -1,7 +1,7 @@
 @lcl = http://localhost:8080
 @gcp = https://mongo-dot-justadirck.uc.r.appspot.com
 
-@host = {{gcp}}
+@host = {{lcl}}
 
 ###
 GET {{host}} HTTP/1.1
@@ -21,16 +21,8 @@ content-type: application/json
 
 {
     "firstName" : "Dirck",  
-    "lastName" : "Hecking" 
-}
-
-###
-POST {{host}}/people HTTP/1.1
-content-type: application/json
-
-{
-    "firstName" : "Shar",  
-    "lastName" : "Kondzela" 
+    "lastName" : "Hecking",
+    "email": "justadirck@gmail.com"
 }
 
 ###
@@ -42,7 +34,8 @@ content-type: application/json
 
 {
     "firstName" : "Dircko",  
-    "lastName" : "Hecking" 
+    "lastName" : "Hecking",
+    "email": "justadirck@gmail.com"
 }
 
 ###
@@ -50,7 +43,8 @@ PATCH {{host}}/people/641485210697e2405d2f6f86 HTTP/1.1
 content-type: application/json
 
 {
-    "firstName" : "Dirck"
+    "firstName" : "Dirck",
+    "email": "justadirck@pm.me"
 }
 
 ###
