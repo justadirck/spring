@@ -9,7 +9,7 @@ public class AppController {
 
 	@GetMapping(path = "/")
 	public @ResponseBody String root() {
-		return "sqlserver ok";
+		return "mysql ok";
 	}
 
 }

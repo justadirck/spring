@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class AppController {
 
-	@GetMapping(path = "/")
-	public @ResponseBody String root() {
-		return "sqlserver ok";
-	}
+  @GetMapping(path = "/")
+  public @ResponseBody String root() {
+    return "postgres ok";
+  }
 
 }

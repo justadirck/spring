@@ -19,7 +19,8 @@
 
     "spring-boot.ls.java.home":"C:/Program Files/BellSoft/LibericaJDK-17/bin",
 
-    "terminal.integrated.scrollback": 10000,    
+    "terminal.integrated.scrollback": 10000,  
+    "terminal.integrated.fontSize": 14,  
 
     "workbench.editorAssociations": {
        "*.md": "vscode.markdown.preview.editor"
@@ -30,5 +31,6 @@
             "debug": false
         }
     ],
+    "java.dependency.packagePresentation": "flat",
 
 }
