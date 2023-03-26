@@ -123,6 +123,7 @@
           <version>0.3.0</version>
           <executions>
             <execution>
+              <?m2e ignore?>
               <id>generate-css-using-sass</id>
               <phase>generate-resources</phase>
               <goals>

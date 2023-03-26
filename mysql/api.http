@@ -2,7 +2,7 @@
 
 @gcp = https://mysql-dot-justadirck.uc.r.appspot.com
 
-@host = {{lcl}}
+@host = {{gcp}}
 
 ###
 GET {{host}} HTTP/1.1
@@ -28,14 +28,15 @@ content-type: application/json
 }
 
 ###
-PUT {{host}}/people/1 HTTP/1.1
+PUT {{host}}/people/5 HTTP/1.1
 content-type: application/json
 
 {
-    "name" : "carly",  
-    "email" : "carly@gmail.com" 
+    "first" : "yoshi",  
+    "last" : "five",  
+    "email" : "yoshi@gmail.com" 
 }
 
 
 ###
-DELETE {{host}}/people/102 HTTP/1.1
+DELETE {{host}}/people/152 HTTP/1.1

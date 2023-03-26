@@ -14,7 +14,9 @@ public class Person {
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer id;
 
-    private String name;
+    private String first;
+
+    private String last;
 
     private String email;
 
