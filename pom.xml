@@ -14,8 +14,8 @@
         <module>mysql</module>
         <module>postgres</module>
         <module>sqlserver</module>
-        <!-- <module>web</module>
-        <module>web-cities</module> -->
+        <module>web</module>
+        <module>web-cities</module>
     </modules>
 
     <properties>
