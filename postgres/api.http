@@ -2,7 +2,7 @@
 
 @gcp = https://postgres-dot-justadirck.uc.r.appspot.com
 
-@host = {{gcp}}
+@host = {{lcl}}
 
 ###
 GET {{host}}/demo/all HTTP/1.1
