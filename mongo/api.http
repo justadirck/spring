@@ -1,7 +1,7 @@
 @lcl = http://localhost:8080
 @gcp = https://mongo-dot-justadirck.uc.r.appspot.com
 
-@host = {{lcl}}
+@host = {{gcp}}
 
 ###
 GET {{host}} HTTP/1.1
