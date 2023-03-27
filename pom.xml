@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
-    
-	<groupId>io.spring</groupId>
+
+    <groupId>io.spring</groupId>
     <artifactId>modules</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -20,7 +22,7 @@
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>        
+        <maven.compiler.target>17</maven.compiler.target>
         <spring-boot.version>3.0.5</spring-boot.version>
         <spring-cloud-gcp.version>1.2.8.RELEASE</spring-cloud-gcp.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -48,17 +50,17 @@
                 <version>4.1.2</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>            
+            </dependency>
         </dependencies>
     </dependencyManagement>
-    
+
     <build>
         <finalName>${project.name}</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
             </resource>
-        </resources>              
+        </resources>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -74,7 +76,7 @@
                                 <goal>repackage</goal>
                             </goals>
                         </execution>
-                    </executions>               
+                    </executions>
                 </plugin>
                 <plugin>
                     <groupId>com.google.cloud.tools</groupId>
@@ -84,7 +86,7 @@
                         <version>GCLOUD_CONFIG</version>
                         <projectId>GCLOUD_CONFIG</projectId>
                     </configuration>
-                </plugin>              
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>

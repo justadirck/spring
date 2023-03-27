@@ -1,0 +1,7 @@
+@lcl = http://localhost:8080
+@gcp = https://dirck-dot-justadirck.uc.r.appspot.com
+
+@host = {{lcl}}
+
+###
+GET {{host}} HTTP/1.1
