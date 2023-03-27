@@ -1,8 +1,10 @@
-# postgres
+# mysql
+
+https://mysql-dot-justadirck.uc.r.appspot.com
 
 revoke all credentials
 
-```shell
+```bash
 > gcloud auth application-default revoke
 > gcloud auth revoke --all
 ```
@@ -10,8 +12,8 @@ revoke all credentials
 activate service account
 
 ```bash
-> gcloud auth activate-service-account justapostgres@justadirck.iam.gserviceaccount.com --key-file=service.json
-Activated service account credentials for: [justapostgres@justadirck.iam.gserviceaccount.com]
+> gcloud auth activate-service-account justamysql@justadirck.iam.gserviceaccount.com --key-file=service.json
+Activated service account credentials for: [justamysql@justadirck.iam.gserviceaccount.com]
 ```
 
 list credentialed accounts
@@ -20,7 +22,7 @@ list credentialed accounts
 > gcloud auth list
 Credentialed Accounts
 ACTIVE  ACCOUNT
-*       justapostgres@justadirck.iam.gserviceaccount.com
+*       justamysql@justadirck.iam.gserviceaccount.com
 ```
 
 print access token

@@ -29,6 +29,10 @@
         {
             "command": "spring-boot:run",
             "debug": false
+        },
+        {
+            "command": "appengine:deploy",
+            "debug": false
         }
     ],
     "java.dependency.packagePresentation": "flat",

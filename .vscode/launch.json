@@ -33,6 +33,16 @@
             "projectName": "data-gemfire",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<dirck>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "boot.Application",
+            "projectName": "dirck",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
