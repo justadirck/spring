@@ -5,7 +5,7 @@
 @host = {{lcl}}
 
 ###
-GET {{host}}/demo/all HTTP/1.1
+GET {{host}}/all HTTP/1.1
 
 ###
-POST {{host}}/demo/add?name=postgres&email=postgres@gmail.com HTTP/1.1
+POST {{host}}/add?name=postgres&email=postgres@gmail.com HTTP/1.1
