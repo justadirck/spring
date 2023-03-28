@@ -2,7 +2,7 @@
 
 @gcp = https://mysql-dot-justadirck.uc.r.appspot.com
 
-@host = {{gcp}}
+@host = {{lcl}}
 
 ###
 GET {{host}} HTTP/1.1
