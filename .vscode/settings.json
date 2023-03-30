@@ -10,7 +10,7 @@
     "java.saveActions.organizeImports": true,
     "java.cleanup.actionsOnSave": ["qualifyMembers"],   
 
-    "maven.view": "flat",
+    "maven.view": "hierarchical",
     "prettier.tabWidth": 4,
 
     "rest-client.enableTelemetry": false,
