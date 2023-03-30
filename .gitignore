@@ -1,8 +1,10 @@
-.notes.txt
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+### gcp ###
+.gcp
 
 ### STS ###
 .apt_generated

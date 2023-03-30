@@ -11,14 +11,14 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>cities</module>        
+        <module>default</module>
         <module>dirck</module>
         <module>mongo</module>
         <module>mysql</module>
         <module>postgres</module>
-        <module>sqlserver</module>
+        <module>template</module>
         <module>vuejs</module>
-        <module>web</module>
-        <module>web-cities</module>
     </modules>
 
     <properties>
@@ -61,10 +61,19 @@
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
+                <filtering>true</filtering>
             </resource>
         </resources>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.3.1</version>
+                    <configuration>
+                        <propertiesEncoding>${project.build.sourceEncoding}</propertiesEncoding>
+                    </configuration>
+                </plugin>                
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
@@ -85,8 +94,10 @@
                     <artifactId>appengine-maven-plugin</artifactId>
                     <version>2.4.4</version>
                     <configuration>
+                        <appEngineDirectory>target/classes/appengine</appEngineDirectory>
                         <version>GCLOUD_CONFIG</version>
                         <projectId>GCLOUD_CONFIG</projectId>
+                        <deploy.stopPreviousVersion>true</deploy.stopPreviousVersion>
                     </configuration>
                 </plugin>
             </plugins>

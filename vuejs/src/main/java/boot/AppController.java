@@ -10,7 +10,7 @@ public class AppController {
     @GetMapping("/")
     String index(Model model) {
         model.addAttribute("eventName", "FIFA 2023");
-        return "index";
+        return "index2";
     }
     
 }
